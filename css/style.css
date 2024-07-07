@@ -1,0 +1,64 @@
+:root{
+    --main-color : rgba(214, 46, 51, 0.6);
+    --second-color : #ccc;
+    --Dark-red :#D62E33;
+}
+aside{
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    translate: -155.984px ;
+    .Open{
+        transform: translateY(400px);
+    }
+    ul li:hover a{
+        color: var(--Dark-red) !important;
+    }
+}
+.mainHeader{
+    background-image: linear-gradient(var(--main-color),var(--main-color)),url(../img/events-heavenly-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 85vh;
+}
+section{
+    .singer h2{
+        background-color: var(--main-color);
+    }
+    .singer p{
+        background-color: var(--second-color);
+    }
+    .singerOne p ,.singerTwo p ,.singerThree p ,.singerFour p{
+        display: none;
+    }
+}
+.sectionTwo{
+    background-image: linear-gradient(var(--main-color),var(--main-color)),url(../img/invitation-2508607__340.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+footer{
+    .icons{
+        .icon{
+           width: 45px;
+           height: 45px; 
+           &:hover i.fa-twitter ,&:hover i.fa-facebook-f,&:hover i.fa-instagram, &:hover i.fa-basketball, &:hover i.fa-pinterest{
+            color: white;
+            
+            }
+        }
+        div.twitter:hover,div.facebook:hover,div.instagram:hover,div.basketball:hover,div.pinterest:hover{
+            background-color: var(--Dark-red); 
+        }
+    }
+    span{
+        color: var(--Dark-red);
+    }
+    button{
+        background-color: var(--Dark-red);
+    }
+}
